@@ -1,0 +1,250 @@
+f["Temp">90 && "Ozone"<31]
+d = f["Temp">90 && "Ozone"<31]
+d
+d <- 0
+f["Ozone"<31]
+f["Temp">90]
+f$Ozone
+f[!ok,][1,4]
+f[!ok,][1]
+f[!ok,][1,]
+f[!ok,][1:4,]
+f[1:4,]
+f[1:4,Ozone<31]
+f[1:4,"Ozone"<31]
+f[1:4,,"Ozone"<31]
+f[1:4][]"Ozone"<31]
+f[1:4]["Ozone"<31]
+f[1:4][1<31]
+f[1:4]["Ozone"<31]
+f[4:4]
+temp <- f[4:4]
+tem[]
+temp
+temp[temp>90]
+f(temp[temp>90])
+f[temp[temp>90]]
+f[temp>90]]
+f[temp>90]
+f[4:4>90]
+f[4:4,>90]
+f[4:4,f>90]
+f[!is.na(f)& f>90]
+f[!is.na(f[4:4])& f>90]
+f[!is.na(f[4:4,])& f>90]
+f[4:4,]
+f[4,]
+f[4]
+f[4] > 90
+f[f[4] > 90]
+f["Temp"] > 90
+f[f["Temp"] > 90]["Temp"]
+f[f["Temp"] > 90][1,]
+f[f["Temp"] > 90][1]
+f[f["Temp"] > 90][4]
+f[4]
+f[f["Temp"] > 90]
+f[f[4]] > 90]
+f[f[4] > 90]
+temp[temp>90]
+temp[temp>90][1:4]
+temp[temp>90][1:4,]
+temp
+x[0]
+f[c(1,2)]
+f[c(1,2,4)]
+f[1:2,c(1,2,4)]
+f[1:4,c(1,2,4),c(1)>31]
+f[1:4,c(1,2,4)][c(1)>31]
+f[1:4,c(1,2,4)][c(1)]
+f[1:4,c(1,2,4)][c(1)>31]
+f[1:4,c(1,2,4)][f(1)>31]
+f[1:4,c(1)>31]
+f[1:4,c(1,2,4)]
+temp = f[1:4,c(1,2,4)]
+temp
+temp["Ozone" > 31]
+temp[Ozone > 31]
+temp[$Ozone > 31]
+temp[temp$Ozone > 31]
+temp[temp[1] > 31]
+temp[temp[1:1] > 31]
+temp
+temp[1]
+temp[1]>31
+f[temp[1]>31]
+temp[temp[1]>31]
+f[temp[1]>31]
+temp[1]>31
+temp[1]
+temp[temp[1]>31]
+temp
+temp[(temp[1]>31)]
+temp[(temp[1])>31]
+temp[temp[1:1]>31]
+m31 <- temp[1]>31
+m31
+temp[m31]
+temp[m31,1:4]
+temp[["Ozone">31]]
+temp[["Ozone"]>31]
+temp[["Ozone"]]
+temp[["Ozone">31]]
+temp[["Ozone" > 31]]
+temp[["Ozone"]]>31
+temp[["Ozone">31],1]
+temp[["Ozone">31],1:1]
+temp[["Ozone"]["Temp"]]
+temp["Ozone">31]
+temp[c(1)>31]
+temp["Ozone">31][c(1)]
+temp
+temp["Ozone"]
+temp["Ozone"]>31
+temp[temp,temp["Ozone"]>31]
+temp[temp[1],temp["Ozone"]>31]
+temp[temp["Ozone"]>31, temp]
+temp[temp["Ozone"]>31, temp[1]]
+temp[temp["Ozone"]>31]
+temp[temp["Ozone"]>31,]
+temp["Ozone">31,]
+temp[["Ozone"]>31,]
+temp[["Ozone">31],]
+temp[temp["Ozone"]>31,]
+temp[temp["Ozone"]>31 & temp["Temp"] > 70,]
+temp[temp["Ozone"]>31 & temp["Temp"] > 70,2]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,2]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,2:2]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,c(2)]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,1:2]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,[2]]
+temp[temp["Ozone"]>31 & temp["Temp"] > 60,][2]
+f[f["Ozone"]>31 & f["Temp"] > 60,][2]
+f[f["Ozone"]>31]
+f[f["Ozone"]>31,]
+f[f["Ozone"]>31 & f["Temp"]>90,]
+f[f["Ozone"]>31 & f["Temp"]>90,1:4]
+f[f["Ozone"]>31 & f["Temp"]>90,c(1, 2, 4)]
+f_set1<-f[f["Ozone"]>31 & f["Temp"]>90,c(1, 2, 4)]
+f_set1
+f_set1[!is.na(f_set1),]
+!is.na(f_set1)
+is.na(f_set1)
+f[!is.na(f_set1)]
+f[!is.na(f_set1)][1]
+f_set1[!is.na(f_set1)]
+f_set1[!is.na(f_set1),]
+f_set1
+f_set1[!is.na(f_set1),][1]
+f_set1[!is.na(f_set1)][1]
+f_set1[!is.na(f_set1)][1:1]
+f_set1[!is.na(f_set1)][1,]
+f_set1[!is.na(f_set1),]
+f_set1
+!is.na(f_set1)
+fset2 <- complete.cases(f_set1)
+fset2
+fset2 <- complete.cases(f_set1,)
+fset2 <- complete.cases(f_set1,1)
+is.na(f_set1)
+fset2 <-is.na(f_set1)
+fset2
+f_set1[!fset2,][1]
+f_set1[!fset2,]
+fset2
+f_set1
+f_set1[fset2]
+f_set1[!fset2]
+f_set1[!fset2,]
+f_set1
+f18 < f[c(1,2,4)]
+f18 <- f[c(1,2,4)]
+f18
+f18["Temp"]>90
+f18[f18["Temp"]>90]
+f18[f18["Temp"]>90,]
+f18 <- f18[f18["Temp"]>90,]
+f18
+dim(f18)
+f18 <- f18[f18["Ozone"]>31,]
+f18
+f18 <- f[c(1,2,4)]
+f18 <- f18[f18["Temp"]>90,]
+f18
+f18 <- f18[f18["Ozone"]>31 | is.na(f18["Ozone"]) ,]
+f18
+mean(f18[3])
+mean(f18["Temp"])
+mean(f18["Temp"],c(1))
+f18[3]
+f18[2]
+f182<- f18[2]
+maen(f182)
+mean(f182)
+mean(f[!ok,"Ozone"])
+f182
+f[!ok,"Ozone"]
+f182[]
+f182[1]
+f182[c(1)]
+f182[1:1]
+f18
+f182<- f18[2,c(1)]
+f182
+sum(f18[2])
+mean(f18[2])
+f18 <- f18[f18["Ozone"]>31 | !is.na(f18["Ozone"]) ,]
+f18
+f18 <- complete.cases(f18)
+f18
+f18[1,]
+f18[1,4]
+f18 <- f18[f18["Temp"]>90,]
+f18 <- f[f["Temp"]>90,c(1,2,4)]
+f18
+f18c <- compelte.cases(f18)
+f18c <- complete.cases(f18)
+f18c
+mean(f18[f18c)
+mean(f18[f18c])
+mean(f18[f18c,[2]])
+mean(f18[f18c],[2])
+mean(f18[f18c,c(2))
+mean(f18[f18c,c(2)])
+f18[f18c,c(2)]
+f18[f18c,[2]]
+f18[f18c][2]
+f18[f18c,][2]
+mean(f18[f18c,][2])
+f182
+f18[f18c,][2]
+f182<-f18[f18c,][2]
+f182
+mean(f182)
+mean(f182[f182, c(1)])
+f182[f182, c(1)]
+f182[f182, ]
+f182[c(1) ]
+paste(f182)
+mean(paste(f182))
+mean(f182[f182, c(1)])
+f182[f182, c(1)]
+mean(f18[f18c,][2])
+mean(f18[f18c,c(2)])
+f["Month"]=6
+f
+f<- read.csv(hw1_data.csv)
+f<- read.csv("hw1_data.csv")
+f
+f["Month"]
+f[f["Month"]>5,]
+f[f["Month"]==6,]
+dim(f[f["Month"]==6,])
+mean(f[f["Month"]==6,c(4)])
+f[f["Month"]==5,c(1)]
+max(f[f["Month"]==5,c(1)])
+max(f[f["Month"]==5,c(1)], na.rm=TRUE)
+x <- list(2, "a", "b", TRUE)
+x[[2]]
+class(x[[2]])
+class(x)
