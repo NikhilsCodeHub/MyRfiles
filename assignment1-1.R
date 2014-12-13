@@ -35,17 +35,17 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     for(i in id){
         
         if (i<10){
-            fileName<-(paste("00",toString(i),".csv", sep=""))
+            fileName<-(paste("/00",toString(i),".csv", sep=""))
         }
         else {
-            fileName<-(paste("0",toString(i),".csv", sep=""))
+            fileName<-(paste("/0",toString(i),".csv", sep=""))
         }
         fileName<-paste(directory,fileName,sep="") 
-        print(paste("Getting data for: ", fileName))
+        #print(paste("Getting data for: ", fileName))
         
         ### Retrive data from each file for corresponding ID
         filedata<-read.csv(fileName)
-        print(dim(filedata))
+        #print(dim(filedata))
         
         ### RBind Data for each ID to form one big matrix
         if (length(bigdata)==1){
@@ -56,8 +56,8 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         }
                 
     }
-    print("Big Data")
-    print(dim(bigdata))
+    #print("Big Data")
+    #print(dim(bigdata))
     
     if (pollutant=="sulfate"){
         pollutantId=2   ## --- Corresponds to Suphate column in the dataset
@@ -66,10 +66,11 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         pollutantId=3   ## --- Corresponds to Nitrate column in the dataset
     }
     if(pollutantId==0){
-        ##Throw Error
+        print("Given Pollutant not found.")
+        return(0)
     }
     ### remove NA for given column
-    print(dim(bigdata[!is.na(bigdata[pollutantId]),pollutantId]))
+    #print(length(bigdata[!is.na(bigdata[pollutantId]),pollutantId]))
     
     ### Calculate Mean for given column
     mean(bigdata[!is.na(bigdata[pollutantId]),pollutantId])
