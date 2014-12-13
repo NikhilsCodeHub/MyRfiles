@@ -21,14 +21,16 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     ## remove NA for given column
     ## Calculate Mean for given column
     
-    ### Loop For Given List of IDs
+    ## directory <- "~/CloudStorage/GoogleDrive/Online Learning/Coursera/R Programming/week2/specdata/"
     
     
-    
+    ### Initialize
     fileName<-""
     filedata<-""
     bigdata<-""
     pollutantId<-0
+    
+    ### Loop For Given List of IDs
     
     for(i in id){
         
@@ -38,7 +40,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         else {
             fileName<-(paste("0",toString(i),".csv", sep=""))
         }
-        fileName<-paste("~/CloudStorage/GoogleDrive/Online Learning/Coursera/R Programming/week2/specdata/",fileName,sep="")
+        fileName<-paste(directory,fileName,sep="") 
         print(paste("Getting data for: ", fileName))
         
         ### Retrive data from each file for corresponding ID
@@ -63,12 +65,12 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     if (pollutant=="nitrate"){
         pollutantId=3   ## --- Corresponds to Nitrate column in the dataset
     }
-    if(poluutantId==0){
+    if(pollutantId==0){
         ##Throw Error
     }
     ### remove NA for given column
-    print(dim(file1[!is.na(file1[pollutantId]),pollutantId]))
+    print(dim(bigdata[!is.na(bigdata[pollutantId]),pollutantId]))
     
     ### Calculate Mean for given column
-    mean(file1[!is.na(file1[pollutantId]),pollutantId])
+    mean(bigdata[!is.na(bigdata[pollutantId]),pollutantId])
 }
