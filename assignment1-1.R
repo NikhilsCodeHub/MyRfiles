@@ -37,8 +37,11 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         if (i<10){
             fileName<-(paste("/00",toString(i),".csv", sep=""))
         }
-        else {
+        else if (i>9 & i<100){
             fileName<-(paste("/0",toString(i),".csv", sep=""))
+        }
+        else {
+            fileName<-(paste("/",toString(i),".csv", sep=""))
         }
         fileName<-paste(directory,fileName,sep="") 
         #print(paste("Getting data for: ", fileName))
@@ -74,4 +77,21 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     
     ### Calculate Mean for given column
     mean(bigdata[!is.na(bigdata[pollutantId]),pollutantId])
+}
+
+
+complete <- function(directory, id = 1:332) {
+    ## 'directory' is a character vector of length 1 indicating
+    ## the location of the CSV files
+    
+    ## 'id' is an integer vector indicating the monitor ID numbers
+    ## to be used
+    
+    ## Return a data frame of the form:
+    ## id nobs
+    ## 1  117
+    ## 2  1041
+    ## ...
+    ## where 'id' is the monitor ID number and 'nobs' is the
+    ## number of complete cases
 }
